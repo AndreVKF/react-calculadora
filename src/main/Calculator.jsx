@@ -46,15 +46,6 @@ export class Calculator extends Component {
         values = [...this.state.values]
       }
 
-      console.log(this.state)
-      console.log({
-        displayValue: values[0],
-        operation: equals ? null : operation,
-        currentValuePosition: equals ? 0 : 1,
-        clearDisplay: true,
-        values,
-      })
-
       // update state
       this.setState({
         ...this.state,
@@ -116,7 +107,6 @@ export class Calculator extends Component {
         }
 
         addDigit(numberInput)
-        console.log(this.state.displayValue)
       }
     }
 
